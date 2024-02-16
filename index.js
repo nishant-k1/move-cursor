@@ -17,7 +17,7 @@ app.get("/", (req, res) => {
     const randomX = Math.floor(Math.random() * xRange);
     const randomY = Math.floor(Math.random() * yRange);
     robot.moveMouse(randomX, randomY);
-  }, 5000);
+  }, 500000);
 
   res.send("Break Protocol Initiated!");
 });
